@@ -16,6 +16,7 @@
        
         <style>
             .container{
+                margin-top: 50px;
                 width:400px;
             }
         </style>
@@ -45,6 +46,5 @@
                 Don't have an account yet? <a href="register.jsp">Register here.</a>
             </div>
         </center>
-        
     </body>
 </html>
