@@ -71,7 +71,7 @@
                 </form>
                 Already have an account? <a href="login.jsp">Sign in.</a>
             </div>
-        <center>
+        </center>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
