@@ -20,7 +20,6 @@
                 welcome page and also update the welcome-file setting in</i>
             <tt>web.xml</tt>.</p>
         <p> Todays date is <%= date %></p>
-        <%
-        %>
+
     </body>
 </html>
