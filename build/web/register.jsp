@@ -26,6 +26,8 @@
         <%@include file='header.jsp'%>  
         
         <center>
+            <img src="IMAGES/sample_logo.png" alt="logo">
+            
             <h1>Register</h1> 
             <div class="container">
                 <form class="form-horizontal" name="login" action="Register">
