@@ -16,7 +16,14 @@
         <link href="/bootstrap.min.css" rel="stylesheet">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <style>
+            body{
+                margin-top: 230px;
+            }
+            .container{
+                width:400px;
+            }
+        </style>
     </head>
     <body>
         <center>
@@ -26,15 +33,14 @@
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input type="text" class="form-control" name="uname" placeholder="Username">
-                </div>
+                </div><br>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                     <input type="password" class="form-control" name="pword" placeholder="Password">
-                </div>
-
+                </div><br>
                 <div class="form-group">
                     <div class="col-sm-12 controls">
-                        <input type="submit" value="Login" name="login" class="btn btn-primary pull-right"/>
+                        <input type="submit" value="Login" name="login" class="btn btn-primary pull-right btn-block"/>
                     </div>
                 </div>
 
