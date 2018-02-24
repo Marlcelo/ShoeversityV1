@@ -18,8 +18,7 @@
             Enter username: <input type="text" name="uname" value="" size="30" />
             Enter password: <input type="password" name="password" value="" size="30" />
             
-            <input type="submit" name="login" />
-            
+            <input type="submit" value="Login" name="login" />
         </form>
     </body>
 </html>

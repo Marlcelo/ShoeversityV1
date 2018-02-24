@@ -5,17 +5,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Welcome to Spring Web MVC project</title>
+        <title>Welcome to Shoeversity!</title>
     </head>
 
     <body>
-        <p>Products page here! :) Home page!</p>
-        
+        header here      
         
         <form name="loginUser" action="login.jsp">
            <input type="submit" value="Sign In" name="loginUser" />
         </form>
-        
+        <p>Products page here! :) Home page!</p>
     </body>
 </html>
 
