@@ -6,10 +6,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome to Shoeversity!</title>
+        
+        <!--BOOTSTRAP-->
+        <%@include file='../../STYLES/bootstrap-template.jsp'%>
     </head>
 
     <body>
-        header here      
+        <%@include file='../../header.jsp'%>     
         
         <form name="loginUser" action="login.jsp">
            <input type="submit" value="Sign In" name="loginUser" />

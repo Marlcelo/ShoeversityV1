@@ -9,23 +9,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Login</title>
-        <link href="/bootstrap.min.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!--BOOTSTRAP-->
+        <%@include file='../../STYLES/bootstrap-template.jsp'%>
+       
         <style>
-            body{
-                margin-top: 230px;
-            }
             .container{
                 width:400px;
             }
         </style>
     </head>
     <body>
+        <!--Header-->
+        <%@include file='header.jsp'%>  
+        
         <center>
             <h1>Login</h1> 
             <div class="container">
@@ -47,7 +45,5 @@
                 Don't have an account yet? <a href="register.jsp">Register here.</a>
             </div>
         </center>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
