@@ -28,22 +28,22 @@
             <h1>Login</h1> 
             <div class="container">
                 <form class="form-horizontal" name="login" action="Login">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input type="text" class="form-control" name="uname" placeholder="Username">
-                </div><br>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input type="password" class="form-control" name="pword" placeholder="Password">
-                </div><br>
-                <div class="form-group">
-                    <div class="col-sm-12 controls">
-                        <input type="submit" value="Login" name="login" class="btn btn-primary pull-right btn-block"/>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="uname" placeholder="Username">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" name="pword" placeholder="Password">
+                    </div><br>
+                    <div class="form-group">
+                        <div class="col-sm-12 controls">
+                            <input type="submit" value="Login" name="login" class="btn btn-primary pull-right btn-block"/>
+                        </div>
                     </div>
-                </div>
-
                 </form>
+                Don't have an account yet? <a href="register.jsp">Register here.</a>
             </div>
-        <center>
+        </center>
     </body>
 </html>
