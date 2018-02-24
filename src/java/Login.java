@@ -25,7 +25,7 @@ public class Login extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
         
         String uname = request.getParameter("uname");
-        String password = request.getParameter("password");
+        String password = request.getParameter("pword");
     
         if(uname.equals("chels") && password.equals("wassup")){
                 response.sendRedirect("index.htm");
