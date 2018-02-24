@@ -10,7 +10,7 @@
  	-ms-text-size-adjust:100%}
 
  body{
- 		margin:0
+ 		margin:0;
  		background-repeat:no-repeat;
  		background-size: cover;}
  article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
