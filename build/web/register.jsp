@@ -23,7 +23,7 @@
     </head>
     <body>
         <!--Header-->
-        <%@include file='header.jsp'%>  
+        <%@include file='TEMPLATES/header.jsp'%>  
         
         <center>
             <img src="IMAGES/sample_logo.png" alt="logo">
