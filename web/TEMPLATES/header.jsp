@@ -12,6 +12,7 @@
 		
 	<%
 		String active_page = session.getAttribute("page").toString();
+		pageContext.setAttribute("highlight", active_page);
 	%>
     </head>
     
@@ -25,10 +26,9 @@
 			</div>
 		
 			<ul class="nav navbar-nav pull-right">
-				<li><b> <%= active_page %> </b></li>
-				<li class="active"><a href="index.htm">Products</a></li>
-				<li><a href="login.jsp">Login</a></li>
-				<li><a href="register.jsp">Register</a></li>
+				<li class="${pageScope.highlight == 'products' ? ' active' : ''}"><a href="index.htm">Products</a></li>
+				<li class="${pageScope.highlight == 'login' ? ' active' : ''}"><a href="login.jsp">Login</a></li>
+				<li class="${pageScope.highlight == 'register' ? ' active' : ''}"><a href="register.jsp">Register</a></li>
 			</ul>
 		</div>
         </nav>
