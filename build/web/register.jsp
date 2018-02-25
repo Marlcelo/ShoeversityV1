@@ -47,7 +47,6 @@
 			</div>
 		</div>
 		<br><br>
-  
                 <script src="JS_JQ/jqueryFxns.js"></script>
 
 		
