@@ -10,26 +10,24 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Register</title>
+		
+		<link rel="stylesheet" type="text/css" href="STYLES/main.css">
         
 		<!--BOOTSTRAP-->
 		<%@include file='STYLES/bootstrap-template.jsp'%>
-       
-		<style>
-			.container{
-				margin-top: 50px;
-				width:400px;
-			}
-		</style>
+		
+		<!--Set active_page session variable-->
+		<% session.setAttribute("page", "register"); %>
 	</head>
 	<body>
 		<!--Header-->
 		<%@include file='TEMPLATES/header.jsp'%>  
         
-		<center>
-			<img src="IMAGES/sample_logo.png" alt="logo">
+		<div class="container text-center">
+			<img class="img-circle" src="IMAGES/sample_logo.png" alt="logo">
 
 			<h1>Register</h1> 
-			<div class="container">
+			<div class="content">
 				
 				<ul class="nav nav-tabs nav-justified" data-tabs="tabs">
 					<li class="active"> <a data-toggle="tab" href="#user_reg">Customer</a> </li>
@@ -47,7 +45,7 @@
 					
 				Already have an account? <a href="login.jsp">Sign in.</a>
 			</div>
-		</center>
+		</div>
 		<br><br>
 	</body>
 </html>
