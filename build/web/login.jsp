@@ -15,7 +15,7 @@
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
        
 	<!--Set active_page session variable-->
-	<!--session.setAttribute("active_page", "login");-->
+	<% session.setAttribute("page", "login"); %>
 	
         <style>
             .container{

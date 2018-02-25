@@ -9,6 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	<%
+		String active_page = session.getAttribute("page").toString();
+	%>
     </head>
     
     <body>
@@ -21,6 +25,7 @@
 			</div>
 		
 			<ul class="nav navbar-nav pull-right">
+				<li><b> <%= active_page %> </b></li>
 				<li class="active"><a href="index.htm">Products</a></li>
 				<li><a href="login.jsp">Login</a></li>
 				<li><a href="register.jsp">Register</a></li>
