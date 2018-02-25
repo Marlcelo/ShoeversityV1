@@ -4,6 +4,10 @@
     Author     : Marl
 --%>
 
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,10 +22,35 @@
             String password = request.getParameter("pword");
             String cpassword = request.getParameter("confirmpword");
             String email = request.getParameter("email");
-            String gender = request.getParameter("gender");
-            String first_name = request.getParameter("fname");
-            String middle_name = request.getParameter("mname");
-            String last_name = request.getParameter("lname");
+            ArrayList<String> numbers = new ArrayList<String>();
+            numbers.add(request.getParameter("number1"));
+            String gender = request.getParameter("number1");
+            
+            int counter = 2;
+            boolean contactflag = true;
+            
+            while(contactflag){
+    
+                if(request.getParameter("number".concat(Integer.toString(counter)))!=null){
+                    String parameter = "number".concat(Integer.toString(counter));       
+                    numbers.add(parameter); 
+                    counter++;
+                }else
+                    contactflag = false;
+            }
+            
+            counter = 2;
+            
+            boolean locationflag = true;
+            
+            while(locationflag){
+                if(request.getParameter("location".concat(Integer.toString(counter))) != null){
+                    String newlocation = "location".concat(Integer.toString(counter));       
+                    numbers.add(newlocation); 
+                    counter++;   
+                }else
+                    locationflag = false;
+            }
             
         if(password.equals(cpassword)){    
         try{
@@ -30,7 +59,7 @@
             
             Statement stmnt = conn.createStatement();
             
-            stmnt.executeUpdate("INSERT INTO users(u_username,u_password,u_email,u_gender,first_name,middle_name,last_name) VALUES('"+username+"','"+password+"','"+email+"','"+gender+"','"+first_name+"','"+middle_name+"','"+last_name+"')");
+            stmnt.executeUpdate("INSERT INTO brands(brand_name,b_username,b_password,b_email) VALUES('"+brand+"','"+username+"','"+password+"','"+email+"')");
             
             out.println("data is inserted");
         }catch(Exception e){
