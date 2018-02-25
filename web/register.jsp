@@ -27,7 +27,7 @@
         
 		<center>
 			<img src="IMAGES/sample_logo.png" alt="logo">
-            
+
 			<h1>Register</h1> 
 			<div class="container">
 				
