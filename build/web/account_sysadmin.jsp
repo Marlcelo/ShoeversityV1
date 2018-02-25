@@ -13,7 +13,9 @@
     </head>
     <body>
         <%@include file='TEMPLATES/header.jsp'%>
-        <h1>Hello World!</h1>
+            <div class="container text-center">
+                <img class="img-circle" src="IMAGES/sample_logo.png" alt="profilepic">
+            </div>
         <%@include file='TEMPLATES/footer.jsp'%>
     </body>
 </html>
