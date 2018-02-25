@@ -16,6 +16,7 @@
        
         <style>
             .container{
+                margin-top: 50px;
                 width:400px;
             }
         </style>
@@ -25,6 +26,8 @@
         <%@include file='header.jsp'%>  
         
         <center>
+            <img src="IMAGES/sample_logo.png" alt="logo">
+            
             <h1>Login</h1> 
             <div class="container">
                 <form class="form-horizontal" name="login" action="Login">

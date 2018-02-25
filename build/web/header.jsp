@@ -19,9 +19,9 @@
                     <a class="navbar-brand" href="#">Shoeversity</a>
                 </div>
                 <ul class="nav navbar-nav pull-right">
-                    <li class="active"><a href="#">Products</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li class="active"><a href="index.htm">Products</a></li>
+                    <li><a href="login.jsp">Login</a></li>
+                    <li><a href="register.jsp">Register</a></li>
                 </ul>
             </div>
         </nav>
