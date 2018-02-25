@@ -47,5 +47,8 @@
 			</div>
 		</div>
 		<br><br>
+		
+		<!--Footer-->
+		<%@include file='TEMPLATES/footer.jsp'%> 
 	</body>
 </html>

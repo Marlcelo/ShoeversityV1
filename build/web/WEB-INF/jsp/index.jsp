@@ -24,6 +24,9 @@
         </form>
         <p>Products page here! :) Home page!</p>
 
+	
+	<!--Footer-->
+	<%@include file='../../TEMPLATES/footer.jsp'%> 
     </body>
 </html>
 
