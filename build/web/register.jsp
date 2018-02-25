@@ -47,11 +47,12 @@
 			</div>
 		</div>
 		<br><br>
- marl/features/register/brand/jquery/add_location_and_contacts
+    marl/features/register/brand/jquery/add_location_and_contacts
                 <script src="JS_JQ/jqueryFxns.js"></script>
 
 		
 		<!--Footer-->
 		<%@include file='TEMPLATES/footer.jsp'%> 
+
 	</body>
 </html>
