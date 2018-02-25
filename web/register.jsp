@@ -29,7 +29,7 @@
         <center>
             <h1>Register</h1> 
             <div class="container">
-                <form class="form-horizontal" name="login" action="Register">
+                <form class="form-horizontal" name="login" action="register_data.jsp">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input type="text" class="form-control" name="uname" placeholder="Username" required>
@@ -59,8 +59,8 @@
                         <input type="text" class="form-control" name="lname" placeholder="Doe" required>
                     </div><br>
                     <div class="radio">
-                        <label><input type="radio" name="m" checked>Male</label>
-                        <label><input type="radio" name="f">Female</label>
+                        <label><input type="radio" name="gender" value="m" checked>Male</label>
+                        <label><input type="radio" name="gender" value="f">Female</label>
                     </div><br>
 
                     <div class="form-group">
