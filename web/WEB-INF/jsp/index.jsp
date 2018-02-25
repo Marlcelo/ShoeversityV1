@@ -9,6 +9,9 @@
         
         <!--BOOTSTRAP-->
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
+       
+	<!--Set active_page session variable-->
+	<% session.setAttribute("page", "products"); %>
     </head>
 
     <body>
