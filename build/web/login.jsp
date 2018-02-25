@@ -49,5 +49,9 @@
 				Don't have an account yet? <a href="register.jsp">Register here.</a>
 			</div>
 		</div>
+		<br><br>
+		
+		<!--Footer-->
+		<%@include file='TEMPLATES/footer.jsp'%>  
 	</body>
 </html>
