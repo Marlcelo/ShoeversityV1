@@ -29,6 +29,18 @@
 		<input type="text" class="form-control" name="email" placeholder="Official Email Address" required>
          </div><br>
 		 
+	<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+		<input type="text" class="form-control" name="number" placeholder="Contact Number" required>
+	</div>
+	<div class="alert alert-warning">need to add multiple contact #s</div>
+	
+	<div class="input-group">
+		<span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+		<input type="text" class="form-control" name="location" placeholder="Location" required>
+	</div>
+	<div class="alert alert-warning">need to add multiple locations</div>
+		 
 		 
 	<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
