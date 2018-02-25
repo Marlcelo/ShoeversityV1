@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <%@include file='../../header.jsp'%>     
+        <%@include file='../../TEMPLATES/header.jsp'%>     
         
         <form name="loginUser" action="login.jsp">
            <input type="submit" value="Sign In" name="loginUser" />

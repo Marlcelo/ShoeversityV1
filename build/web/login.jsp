@@ -14,6 +14,9 @@
         <!--BOOTSTRAP-->
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
        
+	<!--Set active_page session variable-->
+	<!--session.setAttribute("active_page", "login");-->
+	
         <style>
             .container{
                 margin-top: 50px;
@@ -23,7 +26,7 @@
     </head>
     <body>
         <!--Header-->
-        <%@include file='header.jsp'%>  
+        <%@include file='TEMPLATES/header.jsp'%>  
         
         <center>
             <img src="IMAGES/sample_logo.png" alt="logo">
