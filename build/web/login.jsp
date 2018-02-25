@@ -14,17 +14,23 @@
         <!--BOOTSTRAP-->
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
        
+	<!--Set active_page session variable-->
+	<!--session.setAttribute("active_page", "login");-->
+	
         <style>
             .container{
+                margin-top: 50px;
                 width:400px;
             }
         </style>
     </head>
     <body>
         <!--Header-->
-        <%@include file='header.jsp'%>  
+        <%@include file='TEMPLATES/header.jsp'%>  
         
         <center>
+            <img src="IMAGES/sample_logo.png" alt="logo">
+            
             <h1>Login</h1> 
             <div class="container">
                 <form class="form-horizontal" name="login" action="Login">
