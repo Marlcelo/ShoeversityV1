@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <br>
-<form class="form-horizontal" name="login" action="register_data.jsp">
+<form class="form-horizontal" name="login" action="register_brand.jsp">
 	<div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 		<input type="text" class="form-control" name="brandname" placeholder="Brand Name" required>
@@ -28,17 +28,27 @@
 		<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></i></span>
 		<input type="text" class="form-control" name="email" placeholder="Official Email Address" required>
          </div><br>
-		 
-	<div class="input-group">
-		<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-		<input type="text" class="form-control" name="number" placeholder="Contact Number" required>
-	</div>
+	
+         <div id ="contacts">
+            <div class="input-group" id="contactNumbers1">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input type="text" class="form-control" name="number1" placeholder="Contact Number" required>
+            </div>
+         </div>
+         <div class="input-group">
+             <button class = "btn btn-info pull-right btn-block btn-sm" id="btnAddContact" type="button">Add Contact#</button>
+         </div>
 	<div class="alert alert-warning">need to add multiple contact #s</div>
 	
-	<div class="input-group">
-		<span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-		<input type="text" class="form-control" name="location" placeholder="Location" required>
-	</div>
+        <div id="locations">
+            <div class="input-group" id="location1">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input type="text" class="form-control" name="location1" placeholder="Location" required>
+            </div>
+        </div>
+        <div class="input-group">
+             <button class = "btn btn-info pull-right btn-block btn-sm" id="btnAddLocation" type="button">Add Location</button>
+         </div>
 	<div class="alert alert-warning">need to add multiple locations</div>
 		 
 		 
