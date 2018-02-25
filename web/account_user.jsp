@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%@include file='TEMPLATES/header.jsp'%>
         <h1>Hello World!</h1>
+        <%@include file='TEMPLATES/footer.jsp'%>
     </body>
 </html>
