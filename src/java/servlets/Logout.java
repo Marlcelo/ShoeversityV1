@@ -1,3 +1,4 @@
+package servlets;
 
 import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
@@ -27,6 +28,6 @@ public class Logout extends HttpServlet {
 			session.invalidate();
 		
 		//redirect to home page
-		response.sendRedirect("lndex.htm");
+		response.sendRedirect(request.getContextPath() + "/login.jsp");
 	}
 }
