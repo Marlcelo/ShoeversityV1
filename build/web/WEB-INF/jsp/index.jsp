@@ -18,6 +18,12 @@
 
     <body>
         <%@include file='../../TEMPLATES/header.jsp'%>     
+        <div class="container">
+            <div class="jumbotron">
+              <h1>Shoeversity</h1> 
+              <p>Buy some very nice sapatoes.</p> 
+            </div>
+        </div>
         
         <div class="container">
             <div class="row">
