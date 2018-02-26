@@ -9,14 +9,51 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Welcome to Shoeversity!</title>
+		
+	<link rel="stylesheet" type="text/css" href="STYLES/main.css">
+        
+        <!--BOOTSTRAP-->
+        <%@include file='../../STYLES/bootstrap-template.jsp'%>
+       
+	<!--Set active_page session variable-->
+	<% session.setAttribute("page", "products"); %>
     </head>
     <body>
         <%@include file='TEMPLATES/header.jsp'%>
-            <div class="container text-center">
-                <img class="img-circle" src="IMAGES/sample_logo.png" alt="profilepic">
+        <div class="container text-center">
+                <div class="col-md-4">
+                    <img class="img-circle" src="IMAGES/sample_logo.png" alt="profilepic">
+                    <br>
+                    <label for="uname">Username:</label><br>
+                    
+                    <hr>
+                    <label for="name">Name:</label><br>
+                    
+                    <hr>
+                    <label for="email">Email:</label><br>
+                    
+                    <hr>
+                    <label for="gnder">Gender:</label><br>
+                    
+                    <hr>
+                </div>
+                <div class="col-md-8">
+                    <h2>Your products</h2><hr>
+                    <!--replace new lines soon-->
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                
+                <!--leave this blank, this is under the account details, unless you want to add something-->
+                <div class="col-md-4">
+                </div>
+                
+                <div class="col-md-8">
+                    <h2>Recent customers</h2><hr>
+                    
+                </div>
+            
             </div>
-        <h1>Hello World!</h1>
         <%@include file='TEMPLATES/footer.jsp'%>
     </body>
 </html>
