@@ -26,6 +26,16 @@
 			</div>
 		
 			<ul class="nav navbar-nav pull-right">
+				<li>
+					<form class="navbar-form" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="q">
+							<div class="input-group-btn">
+								<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>
+				</li>
 				<li class="${pageScope.highlight == 'products' ? ' active' : ''}"><a href="#">Browse</a></li>
 				<li class="${pageScope.highlight == 'account' ? ' active' : ''}"><a href="#">My Account</a></li>
 				<li class="${pageScope.highlight == 'logout' ? ' active' : ''}"><a href="#">Logout</a></li>

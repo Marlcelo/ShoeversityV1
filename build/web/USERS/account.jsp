@@ -11,7 +11,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Shoeversity: My Account</title>
 		
-		<link rel="stylesheet" type="text/css" href="STYLES/main.css">
+		<link rel="stylesheet" type="text/css" href="../STYLES/main.css">
         
 		<!--BOOTSTRAP-->
 		<%@include file='../../STYLES/bootstrap-template.jsp'%>
@@ -24,29 +24,8 @@
 		<%@include file='TEMPLATES/user_header.jsp'%>  
 
 		<div class="container text-center">
-			<img class="img-circle" src="../IMAGES/sample_logo.png" alt="logo">
-
-			<h1>Login</h1> 
 			<div class="content">
-				<form class="form-horizontal" name="login" action="Login">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-						<input type="text" class="form-control" name="uname" placeholder="Username">
-					</div><br>
-					<div class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-						<input type="password" class="form-control" name="pword" placeholder="Password">
-					</div><br>
-					<div class="input-group pull-right">
-						<input type="checkbox" name="isAdmin" value="yes"> &nbsp; I am a System Administrator.
-					</div><br><br>
-					<div class="form-group">
-						<div class="col-sm-12 controls">
-							<input type="submit" value="Login" name="login" class="btn btn-primary pull-right btn-block"/>
-						</div>
-					</div>
-				</form>
-				Don't have an account yet? <a href="register.jsp">Register here.</a>
+				<h1> Welcome, User! </h1>
 			</div>
 		</div>
 		<br><br>
