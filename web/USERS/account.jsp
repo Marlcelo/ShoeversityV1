@@ -16,8 +16,14 @@
 		<!--BOOTSTRAP-->
 		<%@include file='../../STYLES/bootstrap-template.jsp'%>
        
-		<!--Set active_page session variable-->
-		<% session.setAttribute("page", "account"); %>
+		<% 
+			// Set active_page session variable
+			session.setAttribute("page", "account"); 
+			
+			// Get current user
+			String auth_username = session.getAttribute("auth_user_uname").toString();
+			pageContext.setAttribute("username", auth_username);
+		%>
 	</head>
 	<body>
 		<!--Header-->
@@ -25,7 +31,7 @@
 
 		<div class="container text-center">
 			<div class="content">
-				<h1> Welcome, User! </h1>
+				<h1> Welcome, ${username}! </h1>
 			</div>
 		</div>
 		<br><br>
