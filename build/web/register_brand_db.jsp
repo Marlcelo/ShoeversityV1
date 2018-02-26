@@ -24,7 +24,9 @@
             String cpassword = request.getParameter("confirmpword");
             String email = request.getParameter("email");
             ArrayList<String> numbers = new ArrayList<String>();
+            ArrayList<String> locations = new ArrayList<String>();
             numbers.add(request.getParameter("number1"));
+            locations.add(request.getParameter("location1"));
             String gender = request.getParameter("number1");
             
             int counter = 2;
@@ -46,8 +48,9 @@
             
             while(locationflag){
                 if(request.getParameter("location".concat(Integer.toString(counter))) != null){
-                    String newlocation = "location".concat(Integer.toString(counter));       
-                    numbers.add(newlocation); 
+                    String newlocation = "location".concat(Integer.toString(counter));
+                    out.println(newlocation);
+                    locations.add(newlocation); 
                     counter++;   
                 }else
                     locationflag = false;
@@ -66,6 +69,7 @@
             
             String sql = "SELECT uid FROM BRANDS WHERE brand_name = '"+brand+"' AND b_username = '"+username+"'";
             
+            
             ResultSet rs = null;
             
            
@@ -78,6 +82,12 @@
                 String contact = request.getParameter("number"+i);
                 stmnt.executeUpdate("INSERT INTO brand_contact_number (brand_id,contact) VALUES ('"+id+"','"+contact+"')");
                 out.println("contact is inserted");
+            }
+            
+            for(int i = 1; i <= locations.size();i++){
+                String location = request.getParameter("location"+1);
+                stmnt.executeUpdate("INSERT INTO brand_location (brand_id,location) VALUES ('"+id+"','"+location+"')");
+                out.println("Stored Location");
             }
         }catch(Exception e){
             out.println(e);
