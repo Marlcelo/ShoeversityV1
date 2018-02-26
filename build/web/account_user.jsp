@@ -9,12 +9,41 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>My account</title>
+		
+	<link rel="stylesheet" type="text/css" href="STYLES/main.css">
+        
+        <!--BOOTSTRAP-->
+        <%@include file='../../STYLES/bootstrap-template.jsp'%>
+       
+	<!--Set active_page session variable-->
+	<% session.setAttribute("page", "products"); %>
     </head>
     <body>
         <%@include file='TEMPLATES/header.jsp'%>
             <div class="container text-center">
-                <img class="img-circle" src="IMAGES/sample_logo.png" alt="profilepic">
+                <div class="col-md-4">
+                    <img class="img-circle" src="IMAGES/sample_logo.png" alt="profilepic">
+                    <br>
+                    <label for="uname">Username:</label><br>
+                    
+                    <hr>
+                    <label for="name">Name:</label><br>
+                    
+                    <hr>
+                    <label for="email">Email:</label><br>
+                    
+                    <hr>
+                    <label for="gnder">Gender:</label><br>
+                    
+                    <hr>
+                </div>
+                <div class="col-md-8">
+                    <h2>Recent Purchases</h2><hr>
+                    
+                </div>
+                
+                
             </div>
         <%@include file='TEMPLATES/footer.jsp'%>
     </body>
