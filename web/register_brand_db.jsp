@@ -4,6 +4,7 @@
     Author     : Marl
 --%>
 
+<%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
@@ -62,6 +63,22 @@
             stmnt.executeUpdate("INSERT INTO brands(brand_name,b_username,b_password,b_email) VALUES('"+brand+"','"+username+"','"+password+"','"+email+"')");
             
             out.println("data is inserted");
+            
+            String sql = "SELECT uid FROM BRANDS WHERE brand_name = '"+brand+"' AND b_username = '"+username+"'";
+            
+            ResultSet rs = null;
+            
+           
+            rs = stmnt.executeQuery(sql); 
+            rs.next();
+            String id;
+            id = rs.getString("uid"); 
+            
+            for (int i = 1; i <= numbers.size(); i++){
+                String contact = request.getParameter("number"+i);
+                stmnt.executeUpdate("INSERT INTO brand_contact_number (brand_id,contact) VALUES ('"+id+"','"+contact+"')");
+                out.println("contact is inserted");
+            }
         }catch(Exception e){
             out.println(e);
         };
