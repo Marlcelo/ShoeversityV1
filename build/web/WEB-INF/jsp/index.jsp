@@ -19,41 +19,39 @@
     <body>
         <%@include file='../../TEMPLATES/header.jsp'%>     
         
-        <>
-	<div class="col-md-12 shop-tab-container">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 shop-tab-menu">
-              <div class="list-group">
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Laptop & PC's</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Cameras</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Mens Clothing</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Womens Clothing</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Watches</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Tablets</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> All Categories</h4>
-                </a>
-              </div>
-            </div>
-        </div>
-        
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="col-sm-6 col-md-4">
-                    
+                <div class="col-md-3">
+                    <div class="col-md-12 shop-tab-container">
+                        <div class=" shop-tab-menu">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Laptop & PC's</h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Cameras</h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Mens Clothing</h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Womens Clothing</h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Watches</h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Tablets</h4>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> All Categories</h4>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                
+                <div class="col-md-9">
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail" >
                             <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
@@ -109,7 +107,6 @@
                 </div>
             </div>
         </div>
-        
 	<!--Footer-->
 	<%@include file='../../TEMPLATES/footer.jsp'%> 
     </body>
