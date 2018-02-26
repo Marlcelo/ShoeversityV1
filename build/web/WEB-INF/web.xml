@@ -16,6 +16,14 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>register_user_servlet</servlet-name>
+        <servlet-class>register_user_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register_user_servlet</servlet-name>
+        <url-pattern>/register_user_servlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
