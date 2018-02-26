@@ -30,12 +30,12 @@ public class Login extends HttpServlet {
         String password = request.getParameter("pword");
 		
         if(uname.equals("chels") && password.equals("wassup")){
-		response.sendRedirect("USERS/account.jsp");
-				
 		//Store user credentials in sessions
 		HttpSession session = request.getSession();
 		session.setAttribute("auth_user_uname", uname);
 		session.setAttribute("auth_user_pword", password);
+		
+		response.sendRedirect("USERS/account.jsp");
         }else{
                 response.sendRedirect("login.jsp");
         }
