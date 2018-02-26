@@ -28,14 +28,14 @@
 
 			<h1>Login</h1> 
 			<div class="content">
-				<form class="form-horizontal" name="login" action="Login">
+				<form class="form-horizontal" name="login" action="LoginServlet">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-						<input type="text" class="form-control" name="uname" placeholder="Username">
+						<input type="text" class="form-control" name="uname" placeholder="Username" required>
 					</div><br>
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-						<input type="password" class="form-control" name="pword" placeholder="Password">
+						<input type="password" class="form-control" name="pword" placeholder="Password" required>
 					</div><br>
 					<div class="input-group pull-right">
 						<input type="checkbox" name="isAdmin" value="yes"> &nbsp; I am a System Administrator.

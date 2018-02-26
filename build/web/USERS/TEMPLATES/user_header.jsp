@@ -38,7 +38,7 @@
 				</li>
 				<li class="${pageScope.highlight == 'products' ? ' active' : ''}"><a href="#">Browse</a></li>
 				<li class="${pageScope.highlight == 'account' ? ' active' : ''}"><a href="#">My Account</a></li>
-				<li class="${pageScope.highlight == 'logout' ? ' active' : ''}"><a href="#">Logout</a></li>
+				<li class="${pageScope.highlight == 'logout' ? ' active' : ''}"><a href="../LogoutServlet">Logout</a></li>
 			</ul>
 		</div>
         </nav>
