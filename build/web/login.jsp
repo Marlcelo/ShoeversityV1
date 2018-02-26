@@ -28,7 +28,7 @@
 
 			<h1>Login</h1> 
 			<div class="content">
-				<form class="form-horizontal" name="login" action="Login">
+				<form class="form-horizontal" name="login" action="LoginServlet">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 						<input type="text" class="form-control" name="uname" placeholder="Username" required>
