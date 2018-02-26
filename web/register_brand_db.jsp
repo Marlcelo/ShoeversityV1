@@ -79,16 +79,39 @@
             id = rs.getString("uid"); 
             
             for (int i = 1; i <= numbers.size(); i++){
-                String contact = request.getParameter("number"+i);
+                String contact = request.getParameter("number".concat(Integer.toString(i)));
                 stmnt.executeUpdate("INSERT INTO brand_contact_number (brand_id,contact) VALUES ('"+id+"','"+contact+"')");
                 out.println("contact is inserted");
             }
             
             for(int i = 1; i <= locations.size();i++){
-                String location = request.getParameter("location"+1);
+                String location = request.getParameter("location".concat(Integer.toString(i)));
                 stmnt.executeUpdate("INSERT INTO brand_location (brand_id,location) VALUES ('"+id+"','"+location+"')");
                 out.println("Stored Location");
             }
+            
+            String website = request.getParameter("website");
+            String twitter = request.getParameter("twitter");
+            String instagram = request.getParameter("instagram");
+            String facebook = request.getParameter("facebook");
+            
+            if(!website.isEmpty()){
+                stmnt.executeUpdate("INSERT INTO brand_link(brand_id,link_type,link) VALUES('"+id+"','website','"+website+"')");
+                out.println("data is inserted");  
+            }
+            if(!twitter.isEmpty()){
+                stmnt.executeUpdate("INSERT INTO brand_link(brand_id,link_type,link) VALUES('"+id+"','twitter','"+twitter+"')");
+                out.println("data is inserted");  
+            }
+            if(!instagram.isEmpty()){
+                stmnt.executeUpdate("INSERT INTO brand_link(brand_id,link_type,link) VALUES('"+id+"','instagram','"+instagram+"')");
+                out.println("data is inserted");  
+            }
+            if(!facebook.isEmpty()){
+                stmnt.executeUpdate("INSERT INTO brand_link(brand_id,link_type,link) VALUES('"+id+"','facebook','"+facebook+"')");
+                out.println("data is inserted");  
+            }
+            
         }catch(Exception e){
             out.println(e);
         };
