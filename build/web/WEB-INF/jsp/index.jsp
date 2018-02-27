@@ -8,6 +8,9 @@
         <title>Welcome to Shoeversity!</title>
 		
 	<link rel="stylesheet" type="text/css" href="STYLES/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext,vietnamese" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese" rel="stylesheet">
         
         <!--BOOTSTRAP-->
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
@@ -27,116 +30,203 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="col-md-12 shop-tab-container">
-                        <div class=" shop-tab-menu">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Laptop & PC's</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Cameras</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Mens Clothing</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Womens Clothing</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Watches</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Tablets</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> All Categories</h4>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <!-- BEGIN PRODUCTS -->
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/41uq0fc4d/item_2_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
                 </div>
-                
-                <div class="col-md-9">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail" >
-                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
-                            <img src="" class="img-responsive">
-                            <div class="caption">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6">
-                                        <h3>Galaxy S5</h3>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 price">
-                                        <h3><label>$649.99</label></h3>
-                                    </div>
-                                </div>
-                                
-                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a> 
-                                    </div>
-                                <div class="col-md-6">
-                                    <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</a></div>
-                                </div>
-                                <p> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail" >
-                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
-                            <img src="" class="img-responsive">
-                            <div class="caption">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6">
-                                        <h3>Galaxy S5</h3>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 price">
-                                        <h3><label>$649.99</label></h3>
-                                    </div>
-                                </div>
-                                
-                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a> 
-                                    </div>
-                                <div class="col-md-6">
-                                    <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</a></div>
-                                </div>
-                                <p> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail" >
-                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
-                            <img src="" class="img-responsive">
-                            <div class="caption">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6">
-                                        <h3>Galaxy S5</h3>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 price">
-                                        <h3><label>$649.99</label></h3>
-                                    </div>
-                                </div>
-                                
-                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a> 
-                                    </div>
-                                <div class="col-md-6">
-                                    <a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</a></div>
-                                </div>
-                                <p> </p>
-                            </div>
-                        </div>
-                    </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/655583bx9/item_1_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
                 </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/5w7ki5z4t/item_4_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/dawwajl0d/item_3_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		
+		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/41uq0fc4d/item_2_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/655583bx9/item_1_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/5w7ki5z4t/item_4_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-3 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://s12.postimg.org/dawwajl0d/item_3_180x200.png" alt="...">
+      			<h4>Product Tittle</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      			 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+		
+
+		<!-- END PRODUCTS -->
             </div>
         </div>
 	<!--Footer-->
