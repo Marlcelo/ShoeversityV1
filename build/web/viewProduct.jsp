@@ -20,6 +20,15 @@
 	<% session.setAttribute("page", "products"); %>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file='../../TEMPLATES/header.jsp'%>     
+        
+        <form name="loginUser" action="login.jsp">
+           <input type="submit" value="Sign In" name="loginUser" />
+        </form>
+        <p>Products page here! :) Home page!</p>
+
+	
+	<!--Footer-->
+	<%@include file='../../TEMPLATES/footer.jsp'%> 
     </body>
 </html>
