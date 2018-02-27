@@ -12,7 +12,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese" rel="stylesheet">
         
-        <!--BOOTSTRAP-->
+        <!--BOOTSTRAP snippet of code credit https://bootsnipp.com/snippets/Ekpjl -->
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
        
 	<!--Set active_page session variable-->

@@ -9,7 +9,12 @@ and open the template in the editor.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese');   
-body{font-family: 'Quicksand', sans-serif;}
+body{
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 90px;
+    position: relative;
+    height: 100%;
+}
    h4{
     	font-weight: 600;
 	}
