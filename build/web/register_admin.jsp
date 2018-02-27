@@ -29,7 +29,7 @@
             <h1>Create an admin account</h1> 
 		<div class="content">
                     
-                    <form class="form-horizontal" name="register_user" action="RegisterAdminServlet" method="post">
+                    <form class="form-horizontal" name="register_user" action="RegisterAdminServlet" method="POST">
                         <div class="input-group">
                                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                <input type="text" class="form-control" name="uname" placeholder="Username" required>
