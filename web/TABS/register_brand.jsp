@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <br>
-<form class="form-horizontal" name="login" action="register_brand_db.jsp">
+<form class="form-horizontal" name="login" action="RegisterBrandServlet">
 	<div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 		<input type="text" class="form-control" name="brandname" placeholder="Brand Name" required>

@@ -221,8 +221,10 @@
 		
 
 		<!-- END PRODUCTS -->
+
             </div>
         </div>
+	
 	<!--Footer-->
 	<%@include file='../../TEMPLATES/footer.jsp'%> 
     </body>

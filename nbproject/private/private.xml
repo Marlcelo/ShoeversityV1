@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/login.jsp</file>
-            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/WEB-INF/jsp/index.jsp</file>
+            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/register_user_db.jsp</file>
+            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/JS_JQ/jqueryFxns.js</file>
+            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/TABS/register_brand.jsp</file>
             <file>file:/C:/xampp/htdocs/SampleShoeversity/web/register.jsp</file>
+            <file>file:/C:/xampp/htdocs/SampleShoeversity/src/java/register_user_servlet.java</file>
+            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/TABS/register_user.jsp</file>
             <file>file:/C:/xampp/htdocs/SampleShoeversity/web/WEB-INF/web.xml</file>
-            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/register_data.jsp</file>
+            <file>file:/C:/xampp/htdocs/SampleShoeversity/web/redirect.jsp</file>
         </group>
     </open-files>
 </project-private>

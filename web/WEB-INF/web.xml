@@ -12,9 +12,25 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>RegisterBrand</servlet-name>
+        <servlet-class>servlets.RegisterBrand</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterAdmin</servlet-name>
+        <servlet-class>servlets.RegisterAdmin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterBrand</servlet-name>
+        <url-pattern>/RegisterBrand</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterAdmin</servlet-name>
+        <url-pattern>/RegisterAdmin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
