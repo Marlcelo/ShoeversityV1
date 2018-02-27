@@ -21,7 +21,6 @@
 
     <body>
         <%@include file='../../TEMPLATES/header.jsp'%>     
-
         
         <div class="container">
             <div class="row">
