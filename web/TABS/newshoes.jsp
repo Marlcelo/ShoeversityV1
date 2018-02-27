@@ -5,50 +5,67 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>New Shoes</title>
-    </head>
-    <body>
-        <div class="container">
-  <h2>Image Gallery</h2>
-  <p>The .thumbnail class can be used to display an image gallery.</p>
-  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
-  <p>Click on the images to enlarge them.</p>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="IMAGES/MENS/adidas-prophere-mens.jpg" target="_blank">
-          <img src="IMAGES/MENS/adidas-prophere-mens.jpg" alt="Lights" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="IMAGES/MENS/nike-airmax-mens.jpg" target="_blank">
-          <img src="IMAGES/MENS/nike-airmax-mens.jpg" alt="Nature" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="IMAGES/MENS/nike-vapormax-mens.jpg" target="_blank">
-          <img src="IMAGES/MENS/nike-vapormax-mens.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-    </body>
-</html>
+
+       <div class="col-md-9">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" >
+                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
+                            <img src="" class="img-responsive">
+                            <div class="caption">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <h3>Galaxy S5</h3>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 price">
+                                        <h3><label>$649.99</label></h3>
+                                    </div>
+                                </div>
+                                
+                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                                
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" >
+                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
+                            <img src="" class="img-responsive">
+                            <div class="caption">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <h3>Galaxy S5</h3>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 price">
+                                        <h3><label>$649.99</label></h3>
+                                    </div>
+                                </div>
+                                
+                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                            
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" >
+                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
+                            <img src="" class="img-responsive">
+                            <div class="caption">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <h3>Galaxy S5</h3>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 price">
+                                        <h3><label>$649.99</label></h3>
+                                    </div>
+                                </div>
+                                
+                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                                
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
