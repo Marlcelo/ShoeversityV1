@@ -9,7 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Welcome to Shoeversity!</title>
+		
+	<link rel="stylesheet" type="text/css" href="STYLES/main.css">
+        
+        <!--BOOTSTRAP-->
+        <%@include file='../../STYLES/bootstrap-template.jsp'%>
+       
+	<!--Set active_page session variable-->
+	<% session.setAttribute("page", "products"); %>
     </head>
     <body>
         <h1>Hello World!</h1>
