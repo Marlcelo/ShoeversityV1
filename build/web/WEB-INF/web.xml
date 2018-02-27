@@ -16,6 +16,10 @@
         <servlet-name>RegisterBrand</servlet-name>
         <servlet-class>servlets.RegisterBrand</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegisterAdminServlet</servlet-name>
+        <servlet-class>servlets.RegisterAdminServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>RegisterBrand</servlet-name>
         <url-pattern>/RegisterBrand</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterAdminServlet</servlet-name>
+        <url-pattern>/RegisterAdminServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
