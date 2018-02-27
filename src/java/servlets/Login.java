@@ -65,7 +65,7 @@ public class Login extends HttpServlet {
             stmnt = conn.createStatement();
             HttpSession session = null;
             
-            if(request.getParameter("isAdmin") == null){
+            if(request.getParameter("isAdmin") == null){ // not admin
                 sql = "SELECT uid, u_username FROM users where u_username='"+username+"' and u_password='"+password+"'";
                 rs = stmnt.executeQuery(sql);
                 exists = rs.next();
@@ -127,6 +127,8 @@ public class Login extends HttpServlet {
                 
                 
             }
+            
+            response.sendRedirect("index.htm");
             
             
         } catch (ClassNotFoundException ex) {
