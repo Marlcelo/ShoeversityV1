@@ -34,96 +34,34 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="col-md-12 shop-tab-container">
-                        <div class=" shop-tab-menu">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Laptop & PC's</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Cameras</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Mens Clothing</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Womens Clothing</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Watches</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> Tablets</h4>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                  <h4><i class="fa fa-chevron-right" aria-hidden="true"></i> All Categories</h4>
-                                </a>
-                            </div>
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs nav-stacked">
+                            <li class="active"><a data-toggle="tab" href="#newshoes">Just In!</a></li>
+                            <li><a data-toggle="tab" href="#mens">Men</a></li>
+                            <li><a data-toggle="tab" href="#womens">Women</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div id="newshoes" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Some content.</p>
+                            <%@include file='../../TABS/newshoes.jsp'%> 
+                        </div>
+                        <div id="mens" class="tab-pane fade">
+                            <h3>Menu 1</h3>
+                            <p>Some content in menu 1.</p>
+                        </div>
+                        <div id="womens" class="tab-pane fade">
+                            <h3>Menu 2</h3>
+                            <p>Some content in menu 2.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-9">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail" >
-                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
-                            <img src="" class="img-responsive">
-                            <div class="caption">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6">
-                                        <h3>Galaxy S5</h3>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 price">
-                                        <h3><label>$649.99</label></h3>
-                                    </div>
-                                </div>
-                                
-                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
-                                
-                                <p> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail" >
-                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
-                            <img src="" class="img-responsive">
-                            <div class="caption">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6">
-                                        <h3>Galaxy S5</h3>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 price">
-                                        <h3><label>$649.99</label></h3>
-                                    </div>
-                                </div>
-                                
-                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
-                            
-                                <p> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail" >
-                            <h4 class="text-center"><span class="label label-info">Samsung</span></h4>
-                            <img src="" class="img-responsive">
-                            <div class="caption">
-                                <div class="row">
-                                    <div class="col-md-6 col-xs-6">
-                                        <h3>Galaxy S5</h3>
-                                    </div>
-                                    <div class="col-md-6 col-xs-6 price">
-                                        <h3><label>$649.99</label></h3>
-                                    </div>
-                                </div>
-                                
-                                <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
-                                
-                                <p> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
 	
