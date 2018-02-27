@@ -47,7 +47,7 @@
                 <!--leave this blank, this is under the account details, unless you want to add something-->
                 <div class="col-md-4">
                     <hr>
-                    <a href role="button" class="btn btn-default btn-lg">Create an admin account</button></a>
+                    <a href="register_admin.jsp" role="button" class="btn btn-default btn-lg">Create an admin account</button></a>
                     <hr>
                 </div>
                 
