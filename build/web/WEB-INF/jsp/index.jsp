@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome to Shoeversity!</title>
 		
-	<link rel="stylesheet" type="text/css" href="STYLES/main.css">
+	<link rel="stylesheet" type="text/css" href="STYLES/index.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext,vietnamese" rel="stylesheet">
         
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=latin-ext,vietnamese" rel="stylesheet">
