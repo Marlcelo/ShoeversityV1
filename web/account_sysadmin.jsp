@@ -34,18 +34,21 @@
                     <label for="email">Email:</label><br>
                     
                     <hr>
-                    <label for="gnder">Gender:</label><br>
+                    <label for="gnder">Gender:</label>
                     
-                    <hr>
+                    
                 </div>
                 <div class="col-md-8">
                     <h2>Your products</h2><hr>
                     <!--replace new lines soon-->
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
                 
                 <!--leave this blank, this is under the account details, unless you want to add something-->
                 <div class="col-md-4">
+                    <hr>
+                    <a href="register_admin.jsp" role="button" class="btn btn-default btn-lg">Create an admin account</button></a>
+                    <hr>
                 </div>
                 
                 <div class="col-md-8">
