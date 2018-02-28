@@ -46,8 +46,8 @@
         <%@include file='TEMPLATES/user_header.jsp'%>
             <div class="container text-center">
                 <div class="col-md-4">
-                    <img class="img-circle" src="../IMAGES/sample_logo.png" alt="profilepic">
-                    <br>
+                    <img class="img-circle" src="../IMAGES/USERS/dp.jpg" width="15=60px" alt="profilepic">
+                    <br><br><br>
                     <label for="uname">Username: <%= rs.getString("u_username") %></label>
                     <br>
                     
