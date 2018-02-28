@@ -20,6 +20,9 @@
 	<% session.setAttribute("page", "products"); %>
     </head>
     <body>
+        
+        <%@include file='../../TEMPLATES/header.jsp'%> 
+        
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
