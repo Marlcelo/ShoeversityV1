@@ -59,14 +59,16 @@
                     <span class="glyphicon glyphicon-star"></span>
                     <span class="glyphicon glyphicon-star-empty"></span>
                 </div>
-      			<p><%= rs.getString("description")  %> </p>
+                        <p><label class="lead"><%= rs.getString("name")  %></label> </p>
+                        <p><b>COLOR:</b> <%= rs.getString("color")%></p>
+                        <p><b>SIZE:</b> <%= rs.getString("size")  %> </p>
       			<hr class="line">
       			<div class="row">
       				<div class="col-md-6 col-sm-6">
       					<p class="price">P<%= rs.getString("price")  %></p>
       				</div>
       				<div class="col-md-6 col-sm-6">
-                                    <a href="view_selected_product.jsp?id=<%= rs.getString("uid")%>" target="_self">	<button class="btn btn-info right" > BUY ITEM</button></a>
+                                    <a href="view_selected_product.jsp?id=<%= rs.getString("uid")%>" target="_self">	<button class="btn-md btn-info pull-right" > BUY ITEM</button></a>
       				</div>
       				
       			</div>
