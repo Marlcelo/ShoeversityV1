@@ -69,8 +69,16 @@
                            <span class="input-group-addon">Color</span>
                            <input type="text" class="form-control text-center" name="color" placeholder="Red" required>
                     </div><br>
-
-                    <div class="form-group">
+                    
+                    <div class="input-group" style="width:100%; margin-bottom: 20px;">
+                        <div class="input-group input-file" name="Fichier1">
+                            <input type="text" class="form-control" placeholder='Choose a file...' />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default btn-choose" type="button">Choose</button>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="width:105%;">
                              <div class="col-sm-12 controls">
                                       <input type="submit" value="Sell product" name="sell" class="btn btn-primary pull-right btn-block"/>
                              </div>
