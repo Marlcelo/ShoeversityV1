@@ -41,14 +41,6 @@
             </div>
             <div class="row">
 
-                <!-- Centered Pills -->
-                <ul class="nav nav-pills nav-justified">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Menu 1</a></li>
-                  <li><a href="#">Menu 2</a></li>
-                  <li><a href="#">Menu 3</a></li>
-                </ul>
-
                 <!-- BEGIN PRODUCTS -->
                 <%
                     StringBuilder sb = new StringBuilder();
