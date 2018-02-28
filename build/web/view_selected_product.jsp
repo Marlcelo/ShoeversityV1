@@ -44,13 +44,14 @@
 						<p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
 						<h4 class="price">Price: <span>$180</span></h4>
 						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
-						<h5 class="sizes">Size:
+                                                <h5 class="sizes">Size:
                                                     <span class="size" data-toggle="tooltip" >Small</span>
-		
 						</h5>
-						<h5 class="colors">Colors:
+                                                <h5 class="qty">Qty:
+                                                    <span style="margin-left:5px;"><input style="width: 10%; display: inline; " type="number" class="form-control text-center" value="1"></span>
+                                                </h5>
+                                                <h5 class="colors">Color:
 							<span class="color green"></span>
-							<span class="color blue"></span>
 						</h5>
 						<div class="action">
 							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
