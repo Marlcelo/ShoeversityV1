@@ -24,6 +24,7 @@
         <%@include file='STYLES/bootstrap-template.jsp'%>
         <%
             int id = Integer.parseInt(request.getParameter("id"));
+            session.setAttribute("item_id", id);
             
             StringBuilder sb = new StringBuilder();
                     
@@ -44,7 +45,14 @@
 
     </head>
     <body>
-        <%@include file='TEMPLATES/header.jsp'%>     
+        <%
+            if(session.getAttribute("type") == null){
+        %>
+            <%@include file='TEMPLATES/header.jsp'%>     
+            <%}else if(session.getAttribute("type").equals(1)){%>
+                <%@include file='USERS/TEMPLATES/user_header.jsp'%>
+                  
+                <% } %>    
         <div class="container">
 		<div class="card">
 			<div class="container-fliud">
@@ -71,18 +79,20 @@
                                                     <span class="size" data-toggle="tooltip" ><%= rs.getString("size")  %></span>
 		
 						</h5>
-                                                
-                                                <h5 class="qty">Qty:
-                                                    <span style="margin-left:5px;"><input style="width: 10%; display: inline; " type="number" class="form-control text-center" value="1"></span>
-                                                </h5>
+                                                <form action="AddToCartServlet">
+                                                    <h5 class="qty">Qty:
+                                                        <span style="margin-left:5px;"><input style="width: 20%; display: inline; " type="number" name="qty" min="1" class="form-control text-center" value="1"></span>
+                                                    </h5>
                 
-						<h5 class="colors">Colors:
+                                                    <h5 class="colors">Colors:
 							<span class="color <%= rs.getString("color")  %>"></span>
-						</h5>
-						<div class="action">
-							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
-							<button class="like btn btn-default" type="button"><span class="fa fa-star"></span> Rate</button>
-						</div>
+                                                    </h5>
+                                                    <div class="action">
+                                                    
+							<button class="add-to-cart btn btn-default" type="submit">add to cart</button>
+							<button class="like btn btn-default" type="button"><span class="fa fa-star"></span> Rate</button>   
+                                                    </div>
+                                                </form>
 					</div>
 				</div>
 			</div>
@@ -93,6 +103,12 @@
                     }%>
 	
 	<!--Footer-->
-	<%@include file='TEMPLATES/footer.jsp'%> 
+	<%
+            if(session.getAttribute("type") == null){
+        %>
+            <%@include file='../../TEMPLATES/footer.jsp'%>     
+            <%}else if(session.getAttribute("type").equals(1)){%>
+                <%@include file='../../USERS/TEMPLATES/user_footer.jsp'%>
+                <% } %>
     </body>
 </html>
