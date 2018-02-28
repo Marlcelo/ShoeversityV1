@@ -31,15 +31,9 @@
                 <% } %>
         <div class="container">
             <div class="row">
-
-                <!-- Centered Pills -->
-                <ul class="nav nav-pills nav-justified">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Menu 1</a></li>
-                  <li><a href="#">Menu 2</a></li>
-                  <li><a href="#">Menu 3</a></li>
-                </ul>
-
+                
+                <button type="button" class="btn btn-default" value="Add Product"></button>
+                
                 <!-- BEGIN PRODUCTS -->
                 <%
                     StringBuilder sb = new StringBuilder();
