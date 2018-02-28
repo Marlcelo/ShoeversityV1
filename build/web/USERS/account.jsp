@@ -18,6 +18,10 @@
        
 	<!--Set active_page session variable-->
 	<% session.setAttribute("page", "products"); %>
+        
+        <% 
+            
+        %> 
     </head>
     <body>
         <%@include file='TEMPLATES/user_header.jsp'%>
