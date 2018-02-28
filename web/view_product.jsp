@@ -4,6 +4,12 @@
     Author     : Chelsey
 --%>
 
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.util.Date"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -23,7 +29,23 @@
     </head>
     <body>
         <%@include file='../../TEMPLATES/header.jsp'%>     
-      
+        <%
+                    String id = request.getParameter("id");
+                    StringBuilder sb = new StringBuilder();
+                    
+                    try{
+                        Connection conn = null;
+                        Statement stmnt = null;
+                        ResultSet rs = null;
+                        
+                        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoeversity", "root", "");
+                        stmnt = conn.createStatement();
+                        
+                        String sql = "SELECT * FROM shoes WHERE uid = "+id;
+                        
+                        rs = stmnt.executeQuery(sql);
+                        
+                        while(rs.next()){%>
         <div class="container">
 		<div class="card">
 			<div class="container-fliud">

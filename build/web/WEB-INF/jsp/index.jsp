@@ -63,7 +63,7 @@
       					<p class="price">P<%= rs.getString("price")  %></p>
       				</div>
       				<div class="col-md-6 col-sm-6">
-      				 <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" >	<button class="btn btn-info right" > BUY ITEM</button></a>
+                                    <a href="view_product.jsp?id=<%= rs.getString("uid")%>" target="_self">	<button class="btn btn-info right" > BUY ITEM</button></a>
       				</div>
       				
       			</div>
