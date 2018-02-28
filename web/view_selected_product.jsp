@@ -73,7 +73,7 @@
 						</h5>
                                                 
                                                 <h5 class="qty">Qty:
-                                                    <span style="margin-left:5px;"><input style="width: 10%; display: inline; " type="number" class="form-control text-center" value="1"></span>
+                                                    <span style="margin-left:5px;"><input style="width: 15%; display: inline; " type="number" class="form-control text-center" min="1" max="10" value="1"></span>
                                                 </h5>
                 
 						<h5 class="colors">Colors:
