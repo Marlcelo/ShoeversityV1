@@ -32,8 +32,12 @@
         <div class="container">
             <div class="row">
                 
-                <button type="button" class="btn btn-default" value="Add Product"></button>
-                
+                <!-- Centered Pills -->
+                <ul class="nav nav-pills nav-justified">
+                  <li><a href="#">Add a product</a></li>
+                  <li><a href="#">Edit a product</a></li>
+                  <li><a href="#">Delete a product</a></li>
+                </ul>
                 <!-- BEGIN PRODUCTS -->
                 <%
                     StringBuilder sb = new StringBuilder();
