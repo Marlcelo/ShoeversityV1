@@ -1,3 +1,4 @@
+<%@page import="java.Cart"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -28,7 +29,12 @@
             <%@include file='../../TEMPLATES/header.jsp'%>     
             <%}else if(session.getAttribute("type").equals(1)){%>
                 <%@include file='../../USERS/TEMPLATES/user_header.jsp'%>
-                <% } %>
+                
+                
+                
+                <%  
+                    }     
+            %>
         <div class="container">
             <div class="container text-center" style="margin-top: 134px;margin-bottom: 134px;">
                 <div class="row">

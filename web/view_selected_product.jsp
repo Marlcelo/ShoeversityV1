@@ -24,6 +24,7 @@
         <%@include file='STYLES/bootstrap-template.jsp'%>
         <%
             int id = Integer.parseInt(request.getParameter("id"));
+            session.setAttribute("item_id", id); //getId
             
             StringBuilder sb = new StringBuilder();
                     
@@ -44,7 +45,18 @@
 
     </head>
     <body>
-        <%@include file='TEMPLATES/header.jsp'%>     
+        <%
+            if(session.getAttribute("type") == null){
+        %>
+            <%@include file='TEMPLATES/header.jsp'%>     
+            <%}else if(session.getAttribute("type").equals(1)){%>
+                <%@include file='USERS/TEMPLATES/user_header.jsp'%>
+                
+                
+                
+                <%  
+                    }     
+            %>
         <div class="container">
 		<div class="card">
 			<div class="container-fliud">
@@ -72,17 +84,19 @@
 		
 						</h5>
                                                 
-                                                <h5 class="qty">Qty:
-                                                    <span style="margin-left:5px;"><input style="width: 15%; display: inline; " type="number" class="form-control text-center" min="1" max="10" value="1"></span>
-                                                </h5>
+                                                    <form name="addToCart" action="AddToCartServlet">
+                                                        <h5 class="qty">Qty:
+                                                            <span style="margin-left:5px;"><input style="width: 15%; display: inline; " type="number" name="qty" class="form-control text-center" min="1" max="10" value="1"></span>
+                                                        </h5>
                 
-						<h5 class="colors">Colors:
-							<span class="color <%= rs.getString("color")  %>"></span>
-						</h5>
-						<div class="action">
-							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
-							<button class="like btn btn-default" type="button"><span class="fa fa-star"></span> Rate</button>
-						</div>
+                                                        <h5 class="colors">Colors:
+                                                            <span class="color <%= rs.getString("color")  %>"></span>
+                                                        </h5>
+                                                        <div class="action">
+                                                            <button class="add-to-cart btn btn-default" type="submit">add to cart</button>
+                                                            <button class="like btn btn-default" type="button"><span class="fa fa-star"></span> Rate</button>
+                                                        </div>
+                                                    </form>
 					</div>
 				</div>
 			</div>
