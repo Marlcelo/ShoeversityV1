@@ -21,7 +21,7 @@
         <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#"> <img class="img-circle" src="../IMAGES/sample_logo.png" width="20px"> </a>
+				<a class="navbar-brand" href="#"> <img class="img-circle" src="IMAGES/sample_logo.png" width="20px"> </a>
 				<a class="navbar-brand" href="#">Shoeversity</a> 
 			</div>
 		
