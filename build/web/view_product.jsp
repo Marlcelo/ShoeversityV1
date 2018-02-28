@@ -29,9 +29,7 @@
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
-						
-				
-						
+                                            <img src=""/>
 					</div>
 					<div class="details col-md-6">
 						<h3 class="product-title">men's shoes fashion</h3>
