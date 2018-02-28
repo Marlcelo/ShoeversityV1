@@ -29,7 +29,7 @@
             <%}else if(session.getAttribute("type").equals(1)){%>
                 <%@include file='../../USERS/TEMPLATES/user_header.jsp'%>
                 <% } %>
-        <div class="container text-center" style="margin-top: 50px;">
+        <div class="container text-center" style="margin-top: 134px;margin-bottom: 134px;">
             <div class="row">
                 
             <h1>WELCOME TO SHOEVERSITY</h1>
@@ -38,6 +38,8 @@
             <br>
             </div>
         </div>
+        
+        <%@include file='../../index1.jsp'%>
 	
 	<!--Footer-->
         <%

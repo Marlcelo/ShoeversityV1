@@ -88,14 +88,6 @@
             </div>
         </div>
 	
-	<!--Footer-->
-        <%
-            if(session.getAttribute("type") == null){
-        %>
-            <%@include file='../../TEMPLATES/footer.jsp'%> 
-        <%}else if(session.getAttribute("type").equals(1)){%>
-            <%@include file='../../USERS/TEMPLATES/user_footer.jsp'%> 
-            <%}%>
     </body>
 </html>
 
