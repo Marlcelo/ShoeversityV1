@@ -30,25 +30,14 @@
                 <%@include file='../../USERS/TEMPLATES/user_header.jsp'%>
                 <% } %>
         <div class="container">
-            <div class="container text-center" style="margin-top: 134px;margin-bottom: 134px;">
-                <div class="row">
-                
-                    <h1>WELCOME TO SHOEVERSITY</h1>
-                    <p><h3><em>Outfits aren't complete without them sneakas!</em></h3></p>
-                    <p><h3>We want to let you discover various <br>brands' products and create your OOTD.</h3></p>
-                    <br>
-                </div>
-            </div>
             <div class="row">
-
+                
                 <!-- Centered Pills -->
                 <ul class="nav nav-pills nav-justified">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Menu 1</a></li>
-                  <li><a href="#">Menu 2</a></li>
-                  <li><a href="#">Menu 3</a></li>
+                  <li><a href="add_prodct.jsp">Add a product</a></li>
+                  <li><a href="edit_product.jsp">Edit a product</a></li>
+                  <li><a href="delete_product.jsp">Delete a product</a></li>
                 </ul>
-
                 <!-- BEGIN PRODUCTS -->
                 <%
                     StringBuilder sb = new StringBuilder();
@@ -58,7 +47,6 @@
                         Statement stmnt = null;
                         ResultSet rs = null;
                         
-                        Class.forName("com.mysql.jdbc.Driver");
                         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoeversity", "root", "");
                         stmnt = conn.createStatement();
                         
@@ -107,6 +95,14 @@
             </div>
         </div>
 	
+	<!--Footer-->
+        <%
+            if(session.getAttribute("type") == null){
+        %>
+            <%@include file='../../TEMPLATES/footer.jsp'%> 
+        <%}else if(session.getAttribute("type").equals(1)){%>
+            <%@include file='../../USERS/TEMPLATES/user_footer.jsp'%> 
+            <%}%>
     </body>
 </html>
 
