@@ -40,7 +40,7 @@
                 
                 <!-- Centered Pills -->
                 <ul class="nav nav-pills nav-justified" style="margin-bottom: 50px;">
-                  <li><a href="add_prodct.jsp">Add a product</a></li>
+                  <li><a href="add_product.jsp">Add a product</a></li>
                   <li class="active"><a href="edit_product.jsp">Edit a product</a></li>
                   <li><a href="delete_product.jsp">Delete a product</a></li>
                 </ul>

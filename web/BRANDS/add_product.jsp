@@ -29,16 +29,53 @@
             <%}else if(session.getAttribute("type").equals(1)){%>
                 <%@include file='../../USERS/TEMPLATES/user_header.jsp'%>
                 <% } %>
-        <div class="container">
+        <div class="container text-center" style="margin-top:100px; width:50%;">
             <div class="row">
                 
                 <!-- Centered Pills -->
-                <ul class="nav nav-pills nav-justified">
-                  <li><a href="add_prodct.jsp">Add a product</a></li>
+                <ul class="nav nav-pills nav-justified" style="margin-bottom: 50px;">
+                  <li class="active"><a href="add_product.jsp">Add a product</a></li>
                   <li><a href="edit_product.jsp">Edit a product</a></li>
                   <li><a href="delete_product.jsp">Delete a product</a></li>
                 </ul>
+               
+                <form class="form-horizontal text-center" name="edit_product" action="" method="post">
+                   <div class="input-group">
+                           <span class="input-group-addon">Name</span>
+                           <input type="text" class="form-control text-center" name="productname" placeholder="Converse" required>
+                    </div><br>
+                    <div class="input-group">
+                             <span class="input-group-addon">Description</span>
+                             <textarea class="form-control text-center" rows="5" placeholder="Amazing"></textarea>
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-addon">Category</span>
+                        <select class="form-control text-center" id="category" style="width:100%;">
+                          <option>Men's sneakers</option>
+                          <option>Men's formal</option>
+                          <option>Women's casual</option>
+                          <option>Women's sneakers</option>
+                        </select>
+                    </div><br>
+                    <div class="input-group">
+                           <span class="input-group-addon">Size</span>
+                           <input type="number" class="form-control text-center" value="7" required>
+                    </div><br>
+                    <div class="input-group">
+                           <span class="input-group-addon">Price in PhP</span>
+                           <input type="number" class="form-control text-center" value="0" required>
+                    </div><br>
+                    <div class="input-group">
+                           <span class="input-group-addon">Color</span>
+                           <input type="text" class="form-control text-center" name="color" placeholder="Red" required>
+                    </div><br>
 
+                    <div class="form-group">
+                             <div class="col-sm-12 controls">
+                                      <input type="submit" value="Sell product" name="sell" class="btn btn-primary pull-right btn-block"/>
+                             </div>
+                    </div>
+                </form>
                 
             </div>
         </div>
