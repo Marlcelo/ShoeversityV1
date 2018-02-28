@@ -73,6 +73,11 @@
                     
                 </div>              
             </div>
+         
+        <%}catch(Exception e){
+            e.printStackTrace();
+        }%>
+                    
         <%@include file='TEMPLATES/user_footer.jsp'%>
     </body>
 </html>
