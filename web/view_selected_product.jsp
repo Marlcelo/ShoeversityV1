@@ -3,6 +3,10 @@
     Created on : Feb 28, 2018, 10:18:47 PM
     Author     : Marl
 --%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
 <%%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -17,20 +21,39 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         
         <!--BOOTSTRAP-->
-        <%@include file='../../STYLES/bootstrap-template.jsp'%>
-        <%String i;%>
+        <%@include file='STYLES/bootstrap-template.jsp'%>
+        <%
+            int id = Integer.parseInt(request.getParameter("id"));
+            
+            StringBuilder sb = new StringBuilder();
+                    
+                    try{
+                        Connection conn = null;
+                        Statement stmnt = null;
+                        ResultSet rs = null;
+                        
+                        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoeversity", "root", "");
+                        stmnt = conn.createStatement();
+                        
+                        String sql = "SELECT * FROM shoes WHERE uid = "+id;
+                        
+                        rs = stmnt.executeQuery(sql);
+                        
+                        rs.next();%>
+ 
+
     </head>
     <body>
-        <%@include file='../../TEMPLATES/header.jsp'%>     
+        <%@include file='TEMPLATES/header.jsp'%>     
         <div class="container">
 		<div class="card">
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
-                                            <img src=""/>
+                                            <img src="<%= rs.getString("photo_url")  %>"/>
 					</div>
 					<div class="details col-md-6">
-						<h3 class="product-title">men's shoes fashion</h3>
+                                            <h3 class="product-title"> <%= rs.getString("name")  %> </h3>
 						<div class="rating">
 							<div class="stars">
 								<span class="fa fa-star checked"></span>
@@ -41,16 +64,15 @@
 							</div>
 							<span class="review-no">41 reviews</span>
 						</div>
-						<p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
-						<h4 class="price">Price: <span>$180</span></h4>
+						<p class="product-description"> <%= rs.getString("description")  %> </p>
+						<h4 class="price">Price: <span>PHP <%= rs.getString("price")  %></span></h4>
 						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
 						<h5 class="sizes">Size:
-                                                    <span class="size" data-toggle="tooltip" >Small</span>
+                                                    <span class="size" data-toggle="tooltip" ><%= rs.getString("size")  %></span>
 		
 						</h5>
 						<h5 class="colors">Colors:
-							<span class="color green"></span>
-							<span class="color blue"></span>
+							<span class="color <%= rs.getString("color")  %>"></span>
 						</h5>
 						<div class="action">
 							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
@@ -61,8 +83,11 @@
 			</div>
 		</div>
 	</div>
+        <%}catch(Exception e){
+                        e.printStackTrace();
+                    }%>
 	
 	<!--Footer-->
-	<%@include file='../../TEMPLATES/footer.jsp'%> 
+	<%@include file='TEMPLATES/footer.jsp'%> 
     </body>
 </html>
