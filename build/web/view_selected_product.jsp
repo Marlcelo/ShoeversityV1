@@ -71,6 +71,11 @@
                                                     <span class="size" data-toggle="tooltip" ><%= rs.getString("size")  %></span>
 		
 						</h5>
+                                                
+                                                <h5 class="qty">Qty:
+                                                    <span style="margin-left:5px;"><input style="width: 10%; display: inline; " type="number" class="form-control text-center" value="1"></span>
+                                                </h5>
+                
 						<h5 class="colors">Colors:
 							<span class="color <%= rs.getString("color")  %>"></span>
 						</h5>
