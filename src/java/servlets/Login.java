@@ -95,6 +95,9 @@ public class Login extends HttpServlet {
                         session.setAttribute("uid", rs.getString("uid"));
                         session.setAttribute("username", rs.getString("u_username"));
                         session.setMaxInactiveInterval(30*60); //setting session to expiry in 30 mins
+                        
+                        String url = "BRANDS/account.jsp?id=" + rs.getString("uid");
+                        response.sendRedirect(url);
                     }else{
                         out.println("INVALID EMAIL OR PASSWORD");
                         response.sendRedirect("login.jsp");
@@ -120,11 +123,12 @@ public class Login extends HttpServlet {
                    session.setAttribute("username", rs.getString("username"));
                    session.setMaxInactiveInterval(30*60); //setting session to expiry in 30 mins
                    
-                   
+                   String url = "ADMIN/account.jsp?id=" + rs.getString("uid");
+                   response.sendRedirect(url);
                    
                 }else{
                     out.println("INVALID EMAIL OR PASSWORD");
-                    response.sendRedirect("account_sysadmin.jsp");
+//                    response.sendRedirect("account_sysadmin.jsp");
                     response.sendRedirect("login.jsp");
                 }
                  
