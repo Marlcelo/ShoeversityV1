@@ -89,5 +89,42 @@
 	
 	<!--Footer-->
 	<%@include file='TEMPLATES/footer.jsp'%> 
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Methods</h4>
+                </div>
+            <div class="modal-body">
+                <p>The <strong>show</strong> method shows the modal and the <strong>hide</strong> method hides the modal.</p>
+            </div
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="btnClose">Close</button>
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
+      <script>
+      $(document).ready(function(){
+          // Show the Modal on load
+          $("#btnAddToCart").click(function(){
+              $("#myModal").modal("show");
+          }
+
+          // Hide the Modal
+          $("#btnClose").click(function(){
+              $("#myModal").modal("hide");
+          });
+      });
+      </script>
     </body>
 </html>
