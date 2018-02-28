@@ -29,64 +29,17 @@
             <%}else if(session.getAttribute("type").equals(1)){%>
                 <%@include file='../../USERS/TEMPLATES/user_header.jsp'%>
                 <% } %>
-        <div class="container">
+        <div class="container text-center" style="margin-top: 134px;margin-bottom: 134px;">
             <div class="row">
-                <!-- BEGIN PRODUCTS -->
-                <%
-                    StringBuilder sb = new StringBuilder();
-                    
-                    try{
-                        Connection conn = null;
-                        Statement stmnt = null;
-                        ResultSet rs = null;
-                        
-                        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoeversity", "root", "");
-                        stmnt = conn.createStatement();
-                        
-                        String sql = "SELECT * FROM shoes";
-                        
-                        rs = stmnt.executeQuery(sql);
-                        
-                        while(rs.next()){%>
-                                <div class="col-md-3 col-sm-6">
-    		<span class="thumbnail">
-                    <img src="<%= rs.getString("photo_url")  %>" alt="...">
-      			<h4><% rs.getString("name");  %></h4>
-      			<div class="ratings">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                </div>
-                        <p><label class="lead"><%= rs.getString("name")  %></label> </p>
-                        <p><b>COLOR:</b> <%= rs.getString("color")%></p>
-                        <p><b>SIZE:</b> <%= rs.getString("size")  %> </p>
-      			<hr class="line">
-      			<div class="row">
-      				<div class="col-md-6 col-sm-6">
-      					<p class="price">P<%= rs.getString("price")  %></p>
-      				</div>
-      				<div class="col-md-6 col-sm-6">
-                                    <a href="view_selected_product.jsp?id=<%= rs.getString("uid")%>" target="_self">	<button class="btn-md btn-info pull-right" > BUY ITEM</button></a>
-      				</div>
-      				
-      			</div>
-    		</span>
-  		</div>
-                        <%}
-                        
-                    }catch (Exception e){
-                        e.printStackTrace();
-                    };
-                    
-//                    sb.append("")
-                   
-                %>
-  		
-
+                
+            <h1>WELCOME TO SHOEVERSITY</h1>
+            <p><h3><em>Outfits aren't complete without them sneakas!</em></h3></p>
+            <p><h3>We want to let you discover various <br>brands' products and create your OOTD.</h3></p>
+            <br>
             </div>
         </div>
+        
+        <%@include file='../../index1.jsp'%>
 	
 	<!--Footer-->
         <%
