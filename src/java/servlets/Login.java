@@ -70,15 +70,16 @@ public class Login extends HttpServlet {
                 rs = stmnt.executeQuery(sql);
                 exists = rs.next();
                 
-                if(exists){
+                if(exists){ //user
 		   out.println(rs.getString("uid"));
 		   out.println(rs.getString("u_username"));
                    
                    session = request.getSession();
                    session.setAttribute("uid", rs.getString("uid"));
                    session.setAttribute("username", rs.getString("u_username"));
+                   session.setAttribute("type", 1);
                    session.setMaxInactiveInterval(30*60); //setting session to expiry in 30 mins
-                }else{
+                }else{ // brand
                     sql = "SELECT uid, b_username FROM brands where b_username='"+username+"' and b_password='"+password+"'";
                     rs = stmnt.executeQuery(sql);
                     exists = rs.next();
