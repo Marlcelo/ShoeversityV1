@@ -21,12 +21,7 @@
     </head>
     <body>
         <%@include file='../../TEMPLATES/header.jsp'%>     
-        
-        <form name="loginUser" action="login.jsp">
-           <input type="submit" value="Sign In" name="loginUser" />
-        </form>
-        <p>Products page here! :) Home page!</p>
-
+      
 	
 	<!--Footer-->
 	<%@include file='../../TEMPLATES/footer.jsp'%> 
