@@ -158,6 +158,34 @@ img {
 .blue {
   background: #0076ad; }
 
+.red{
+    background: #ff3300;
+}
+
+.yellow{
+    background: #ff0;
+}
+
+.indigo{
+    background: #4B0082;
+}
+
+.violet{
+    background:#990099;
+}
+
+.black{
+    background:#000000;
+}
+
+.white{
+    background:#fff;
+}
+
+.gray{
+    background:#cccccc;
+}
+
 .tooltip-inner {
   padding: 1.3em; }
 
