@@ -79,6 +79,9 @@ public class Login extends HttpServlet {
                    session.setAttribute("username", rs.getString("u_username"));
                    session.setAttribute("type", 1);
                    session.setMaxInactiveInterval(30*60); //setting session to expiry in 30 mins
+                   
+                   String url = "USERS/account.jsp?id=" + rs.getString("uid");
+                   response.sendRedirect(url);
                 }else{ // brand
                     sql = "SELECT uid, b_username FROM brands where b_username='"+username+"' and b_password='"+password+"'";
                     rs = stmnt.executeQuery(sql);
@@ -129,7 +132,7 @@ public class Login extends HttpServlet {
                 
             }
             
-            response.sendRedirect("index.htm");
+            //response.sendRedirect("index.htm");
             
             
         } catch (ClassNotFoundException ex) {
