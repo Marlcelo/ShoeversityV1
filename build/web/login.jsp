@@ -14,7 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="STYLES/main.css">
         
 		<!--BOOTSTRAP-->
-		<%@include file='../../STYLES/bootstrap-template.jsp'%>
+		<%@include file='STYLES/bootstrap-template.jsp'%>
        
 		<!--Set active_page session variable-->
 		<% session.setAttribute("page", "login"); %>
