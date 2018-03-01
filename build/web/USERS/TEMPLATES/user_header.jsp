@@ -13,6 +13,9 @@
 	<%
 		String active_page = session.getAttribute("page").toString();
 		pageContext.setAttribute("highlight", active_page);
+                
+                int uid = Integer.parseInt(session.getAttribute("uid").toString());
+                pageContext.setAttribute("id", uid);
 	%>
     </head>
     
@@ -36,10 +39,11 @@
 						</div>
 					</form>
 				</li>
-				<li class="${pageScope.highlight == 'products' ? ' active' : ''}"><a href="index.htm">Browse</a></li>
-				<li class="${pageScope.highlight == 'account' ? ' active' : ''}"><a href="USERS/account.jsp">My Account</a></li>
-				<li class="${pageScope.highlight == 'logout' ? ' active' : ''}"><a href="../LogoutServlet">Logout</a></li>
-			</ul>
+				<li class="${pageScope.highlight == 'products' ? ' active' : ''}"><a href="../index.htm">Browse</a></li>
+				<li class="${pageScope.highlight == 'account' ? ' active' : ''}"><a href="USERS/account.jsp?id=${pageScope.id}">My Account</a></li>
+				<!--<li class="${pageScope.highlight == 'logout' ? ' active' : ''}"><a href="../LogoutServlet">Logout</a></li>-->
+                                <li class="${pageScope.highlight == 'logout' ? ' active' : ''}"><a href="../login.jsp">Logout</a></li>
+                           </ul>
 		</div>
         </nav>
     </body>
