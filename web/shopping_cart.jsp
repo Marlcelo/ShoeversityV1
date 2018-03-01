@@ -82,9 +82,9 @@
                             <tr>
                                 <td class="col-sm-8 col-md-6">
                                     <div class="media">
-                                        <a class="thumbnail pull-left" href="#"><img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                        <a class="thumbnail pull-left" href="#"><img class="media-object" src="<%= rs.getString("photo_url")  %>" style="width: 72px; height: 72px;"> </a>
                                         <div class="media-body">
-                                            <h4 class="media-heading" style="padding-left: 10px;"><a href="#"> <%= rs.getString("name")  %></a></h4>
+                                            <h4 class="media-heading" style="padding-left: 10px;"><a href="view_selected_product.jsp?id=<%= shoe_id%>"> <%= rs.getString("name")  %></a></h4>
                                         </div>
                                     </div>
                                 </td>
