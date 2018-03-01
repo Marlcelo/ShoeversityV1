@@ -28,6 +28,10 @@
         <servlet-name>AddToCart</servlet-name>
         <servlet-class>servlets.AddToCart</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Brand_AddShoe</servlet-name>
+        <servlet-class>servlets.Brand_AddShoe</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>AddToCart</servlet-name>
         <url-pattern>/AddToCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Brand_AddShoe</servlet-name>
+        <url-pattern>/Brand_AddShoe</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
