@@ -35,6 +35,7 @@
 							<input type="text" class="form-control" placeholder="Search" name="q">
 							<div class="input-group-btn">
 								<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                                                <a href="shopping_cart.jsp"><button class="btn btn-primary" type="submit" style="margin-left:5px;"><i class="glyphicon glyphicon-shopping-cart"></i></button></a>
 							</div>
 						</div>
 					</form>
