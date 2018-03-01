@@ -4,6 +4,12 @@
     Author     : Chelsey
 --%>
 
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.lang.Integer"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,14 +20,15 @@
 	<link rel="stylesheet" type="text/css" href="STYLES/main.css">
         
         <!--BOOTSTRAP snippet of code credit https://bootsnipp.com/snippets/Ekpjl -->
-        <%@include file='../../STYLES/bootstrap-template.jsp'%>
+        <%@include file='STYLES/bootstrap-template.jsp'%>
        
 	<!--Set active_page session variable-->
 	<% session.setAttribute("page", "products"); %>
     </head>
     <body>
         
-        <%@include file='../../TEMPLATES/header.jsp'%> 
+        <%@include file='TEMPLATES/header.jsp'%> 
+        
         
         <div class="container">
             <div class="row">
@@ -37,51 +44,79 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <%
+          
+          
+          out.println(session.getAttribute("cart"));
+          
+          ArrayList<Integer> cart;
+          cart = (ArrayList<Integer>)session.getAttribute("cart");
+          
+          out.println(cart.get(0));
+          float subtotal = 0;
+          for(int i = 0; i < cart.size(); i++){
+              int shoe_id = cart.get(i);
+              int qty = cart.get(i+=1);
+              
+              
+              StringBuilder sb = new StringBuilder();
+              
+              try{
+                        Connection conn = null;
+                        Statement stmnt = null;
+                        ResultSet rs = null;
+                        
+                        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shoeversity", "root", "");
+                        stmnt = conn.createStatement();
+                        
+                        String sql = "SELECT * FROM shoes WHERE uid = "+shoe_id;
+                        
+                        rs = stmnt.executeQuery(sql);
+                        
+                        
+                        rs.next();
+              
+          
+          
+        %>
                             <tr>
                                 <td class="col-sm-8 col-md-6">
                                     <div class="media">
                                         <a class="thumbnail pull-left" href="#"><img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
                                         <div class="media-body">
-                                            <h4 class="media-heading" style="padding-left: 10px;"><a href="#"> Product name</a></h4>
-                                            <h5 class="media-heading" style="padding-left: 10px;"> by <a href="#"> Brand name</a></h5>
+                                            <h4 class="media-heading" style="padding-left: 10px;"><a href="#"> <%= rs.getString("name")  %></a></h4>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="col-sm-1 col-md-1" style="text-align: center">
                                     <input type="number" class="form-control text-center" value="1">
                                 </td>
-                                <td class="col-sm-1 col-md-1 text-center"><strong>$4.87</strong></td>
-                                <td class="col-sm-1 col-md-1 text-center"><strong>$14.61</strong></td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>P<%= rs.getString("price")  %></strong></td>
+                                <%
+                                    double price = Double.parseDouble(rs.getString("price"));
+                                    
+                                    double total = price * qty;
+                                    
+                                    subtotal+=total;
+                                %>
+                                <td class="col-sm-1 col-md-1 text-center"><strong><%= total  %></strong></td>
                                 <td class="col-sm-1 col-md-1">
                                 <button type="button" class="btn btn-danger">
                                     <span class="glyphicon glyphicon-remove"></span> Remove
                                 </button></td>
                             </tr>
-                            <tr>
-                                <td class="col-md-6">
-                                <div class="media">
-                                    <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading" style="padding-left: 10px;"><a href="#">Product name</a></h4>
-                                        <h5 class="media-heading" style="padding-left: 10px;"> by <a href="#">Brand name</a></h5>
-                                    </div>
-                                </div></td>
-                                <td class="col-md-1" style="text-align: center">
-                                    <input type="number" class="form-control text-center" value="1">
-                                </td>
-                                <td class="col-md-1 text-center"><strong>$4.99</strong></td>
-                                <td class="col-md-1 text-center"><strong>$9.98</strong></td>
-                                <td class="col-md-1">
-                                <button type="button" class="btn btn-danger">
-                                    <span class="glyphicon glyphicon-remove"></span> Remove
-                                </button></td>
-                            </tr>
+                            
+                            <%
+                            }catch (Exception e){
+                        e.printStackTrace();
+                    };
+}%>
                             <tr>
                                 <td>   </td>
                                 <td>   </td>
                                 <td>   </td>
                                 <td><h5>Subtotal</h5></td>
-                                <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                                <td class="text-right"><h5><strong><%= subtotal%></strong></h5></td>
                             </tr>
                             <tr>
                                 <td>   </td>
@@ -95,7 +130,7 @@
                                 <td>   </td> <!--Leave these blank-->
                                 <td>   </td>
                                 <td><h3>Total</h3></td>
-                                <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                                <td class="text-right"><h3><strong><%= subtotal+=6.94  %></strong></h3></td>
                             </tr>
                             <tr>
                                 <td>   </td>
@@ -117,6 +152,6 @@
         </div>
         
         <!--Footer-->
-	<%@include file='../../TEMPLATES/footer.jsp'%> 
+	<%@include file='TEMPLATES/footer.jsp'%> 
     </body>
 </html>

@@ -1,0 +1,40 @@
+SMAP
+shopping_005fcart_jsp.java
+JSP
+*S JSP
+*F
++ 0 shopping_cart.jsp
+shopping_cart.jsp
++ 1 bootstrap-template.jsp
+STYLES/bootstrap-template.jsp
++ 2 header.jsp
+TEMPLATES/header.jsp
++ 3 footer.jsp
+TEMPLATES/footer.jsp
+*L
+5,19:57
+5#1,23:76
+23#0,3:98
+26:101,3
+27,4:104
+5#2,9:108
+16:120,2
+17,12:122
+29,3:134,3
+32,6:143
+30#0,2:148
+34,32:153
+65,22:185
+87:207,3
+88,6:210
+94:216,3
+95:219
+96,6:221
+101:227
+102:228,3
+103,7:231
+110,4:239
+113,43:243
+5#3,38:286
+155#0,4:323
+*E
