@@ -22,6 +22,10 @@
         
         <!--BOOTSTRAP-->
         <%@include file='STYLES/bootstrap-template.jsp'%>
+        
+        <!--Set active_page session variable-->
+        <% session.setAttribute("page", "products"); %>
+        
         <%
             int id = Integer.parseInt(request.getParameter("id"));
             session.setAttribute("item_id", id);

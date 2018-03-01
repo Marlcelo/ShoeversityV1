@@ -19,6 +19,8 @@
         <!--BOOTSTRAP snippet of code credit https://bootsnipp.com/snippets/Ekpjl -->
         <%@include file='../../STYLES/bootstrap-template.jsp'%>
        
+        <!--Set active_page session variable-->
+        <% session.setAttribute("page", "products"); %>
     </head>
 
     <body>

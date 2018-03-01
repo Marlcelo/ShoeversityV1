@@ -21,10 +21,12 @@
         <%@include file='../STYLES/bootstrap-template.jsp'%>
        
 	<!--Set active_page session variable-->
-	<% session.setAttribute("page", "products"); %>
+	<% session.setAttribute("page", "account"); %>
+        <% session.setAttribute("type", 1); %>
         
         <% 
             int id = Integer.parseInt(request.getParameter("id"));
+            session.setAttribute("uid", id);
             
             StringBuilder sb = new StringBuilder();
                     
