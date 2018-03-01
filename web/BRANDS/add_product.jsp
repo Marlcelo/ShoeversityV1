@@ -39,31 +39,31 @@
                   <li><a href="delete_product.jsp">Delete a product</a></li>
                 </ul>
                
-                <form class="form-horizontal text-center" name="edit_product" action="" method="post">
+                <form class="form-horizontal text-center" name="edit_product" action="../Brand_AddShoe">
                    <div class="input-group">
                            <span class="input-group-addon">Name</span>
                            <input type="text" class="form-control text-center" name="productname" placeholder="Converse" required>
                     </div><br>
                     <div class="input-group">
                              <span class="input-group-addon">Description</span>
-                             <textarea class="form-control text-center" rows="5" placeholder="Amazing"></textarea>
+                             <textarea class="form-control text-center" name="description" rows="5" placeholder="Amazing"></textarea>
                     </div><br>
                     <div class="input-group">
                         <span class="input-group-addon">Category</span>
-                        <select class="form-control text-center" id="category" style="width:100%;">
-                          <option>Men's sneakers</option>
-                          <option>Men's formal</option>
-                          <option>Women's casual</option>
-                          <option>Women's sneakers</option>
+                        <select class="form-control text-center" id="category" name="category" style="width:100%;">
+                          <option>Mens sneakers</option>
+                          <option>Mens formal</option>
+                          <option>Womens casual</option>
+                          <option>Womens sneakers</option>
                         </select>
                     </div><br>
                     <div class="input-group">
                            <span class="input-group-addon">Size</span>
-                           <input type="number" class="form-control text-center" value="7" required>
+                           <input type="number" class="form-control text-center" name="size" value="7" required>
                     </div><br>
                     <div class="input-group">
                            <span class="input-group-addon">Price in PhP</span>
-                           <input type="number" class="form-control text-center" value="0" required>
+                           <input type="number" class="form-control text-center" name="price" value="0" required>
                     </div><br>
                     <div class="input-group">
                            <span class="input-group-addon">Color</span>
@@ -72,7 +72,7 @@
                     
                     <div class="input-group" style="width:100%; margin-bottom: 20px;">
                         <div class="input-group input-file" name="Fichier1">
-                            <input type="text" class="form-control" placeholder='Choose a file...' />
+                            <input type="text" class="form-control" placeholder='Choose a file...' name="photo_url"/>
                                 <span class="input-group-btn">
                                     <button class="btn btn-default btn-choose" type="button">Choose</button>
                                 </span>
