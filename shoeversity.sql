@@ -50,7 +50,7 @@ CREATE TABLE `admins` (
 INSERT INTO `admins` (`uid`, `username`, `password`, `email`, `gender`, `first_name`, `middle_name`, `last_name`, `time_stamp`) VALUES
 (1, 'marl', 'marl', 'marlchristian@yahoo.com.ph', 'm', 'Marl', 'Christian', 'Ricanor', '2018-02-27 14:18:26'),
 (2, 'linds', 'linds', 'lindsey_erlandsen@dlsu.edu.ph', 'f', 'Lindsey', 'Panghulan', 'Erlandsen', '2018-02-27 14:42:30'),
-(3, 'chels', 'che', 'chelsey@gmail.com', 'm', 'Cristino', 'Panghulan', 'Nodado', '2018-02-27 14:44:58');
+(3, 'chels', 'che', 'chelsey@gmail.com', 'm', 'Cristino', 'Panghulan', 'Nodado', '2018-02-27 14:44:58'),
 (4, 'daniel', 'lachica', 'daniel@gmail.com', 'm', 'Daniel', 'Philippe', 'Lachica', '2018-03-01 00:58:42');
 
 -- --------------------------------------------------------
