@@ -27,7 +27,7 @@
 		
 			<ul class="nav navbar-nav pull-right">
 				<li>
-					<form class="navbar-form" role="search">
+					<form action="../../search_results.jsp" class="navbar-form" role="search">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search" name="q">
 							<div class="input-group-btn">

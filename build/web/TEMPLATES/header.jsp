@@ -26,6 +26,16 @@
 			</div>
 		
 			<ul class="nav navbar-nav pull-right">
+                                <li>
+					<form action="./search_results.jsp" class="navbar-form" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="searchkey">
+							<div class="input-group-btn">
+								<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>
+				</li>
 				<li class="${pageScope.highlight == 'products' ? ' active' : ''}"><a href="index.htm">Products</a></li>
 				<li class="${pageScope.highlight == 'login' ? ' active' : ''}"><a href="login.jsp">Login</a></li>
 				<li class="${pageScope.highlight == 'register' ? ' active' : ''}"><a href="register.jsp">Register</a></li>
